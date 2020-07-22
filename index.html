@@ -18,6 +18,10 @@
         const $myNavbarBurger = document.querySelector('.navbar-burger');
         const $myNavbar = document.querySelector('.navbar-menu');
 
+        // do not expand menu if JS is available
+        $myNavbarBurger.classList.remove('is-active');
+        $myNavbar.classList.remove('is-active');
+
         $myNavbarBurger.addEventListener('click', () => {
           // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
           $myNavbarBurger.classList.toggle('is-active');
@@ -55,14 +59,14 @@
   <!-- Navigation bar -->
   <nav class="navbar is-dark" id="home">
     <div class="navbar-brand">
-      <div class="navbar-burger burger" data-target="myNavbar">
+      <div class="navbar-burger burger is-active" data-target="myNavbar">
         <span></span>
         <span></span>
         <span></span>
       </div>
     </div>
 
-    <div id="myNavbar" class="navbar-menu">
+    <div id="myNavbar" class="navbar-menu is-active">
       <div class="navbar-end">
         <a class="navbar-item" href="#about">
           <span class="icon">
