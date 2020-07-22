@@ -78,3 +78,24 @@ ul li {
   /*background: #cce5ff;*/
   margin: 0.5em;
 }
+
+#toTop {
+  height: 1.9rem;
+  width: 1.9rem;
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: hsla(0, 0%, 21%, 0.65);
+  color: hsl(0, 0%, 96%);
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+#toTop:hover {
+  background-color: hsla(0, 0%, 21%, 0.9);
+}

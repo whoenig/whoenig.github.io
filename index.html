@@ -16,7 +16,7 @@
 
         // Get "navbar-burger" element
         const $myNavbarBurger = document.querySelector('.navbar-burger');
-        const $myNavbar = document.querySelector('.navbar-menu')
+        const $myNavbar = document.querySelector('.navbar-menu');
 
         $myNavbarBurger.addEventListener('click', () => {
           // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
@@ -32,8 +32,8 @@
           $navbarItems.forEach( el => {
             el.addEventListener('click', () => {
               // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-              $myNavbarBurger.classList.toggle('is-active');
-              $myNavbar.classList.toggle('is-active');
+              $myNavbarBurger.classList.remove('is-active');
+              $myNavbar.classList.remove('is-active');
             });
           });
         }
@@ -45,8 +45,15 @@
 
   <body>
 
+  <!-- Scroll Up Button -->
+  <form action="#home">
+    <button id="toTop" title="Go to top">
+      <i class="fas fa-angle-up"></i>
+    </button>
+  </form>
+
   <!-- Navigation bar -->
-  <nav class="navbar is-dark is-fixed-top">
+  <nav class="navbar is-dark" id="home">
     <div class="navbar-brand">
       <div class="navbar-burger burger" data-target="myNavbar">
         <span></span>
@@ -69,12 +76,46 @@
           </span>
           <span>Code</span>
         </a>
-        <a class="navbar-item" href="#publications">
-          <span class="icon">
-            <i class="fas fa-book"></i>
-          </span>
-          <span>Publications</span>
-        </a>
+        <div class="navbar-item has-dropdown is-hoverable" id="navbar-dropdown" href="#publications">
+          <a class="navbar-link" href="#publications">
+            <span class="icon">
+              <i class="fas fa-book"></i>
+            </span>
+            <span>Publications</span>
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#pub_journals">
+              <span class="icon">
+                <i class="fas fa-book"></i>
+              </span>
+              <span>Journals</span>
+            </a>
+
+            <a class="navbar-item" href="#pub_conferences">
+              <span class="icon">
+                <i class="fas fa-book"></i>
+              </span>
+              <span>Conferences</span>
+            </a>
+
+            <a class="navbar-item" href="#pub_workshops">
+              <span class="icon">
+                <i class="fas fa-book"></i>
+              </span>
+              <span>Workshops</span>
+            </a>
+
+            <a class="navbar-item" href="#pub_theses">
+              <span class="icon">
+                <i class="fas fa-book"></i>
+              </span>
+              <span>Theses</span>
+            </a>
+
+          </div>
+
+        </div>
       </div>
     </div>
   </nav>
@@ -291,7 +332,7 @@
 
     <div class="section-heading">
       <h1 class="title is-3">Publications</h1>
-      <h2 class="subtitle is-5">Book Chapters and Journals</h2>
+      <h2 class="subtitle is-5" id="pub_journals">Book Chapters and Journals</h2>
     </div>
 
     <div class="container">
@@ -432,7 +473,7 @@
     </div>
 
     <div class="section-heading">
-      <h2 class="subtitle is-5">Conferences</h2>
+      <h2 class="subtitle is-5" id="pub_conferences">Conferences</h2>
     </div>
 
     <div class="container">
@@ -809,7 +850,7 @@
     </div>
 
     <div class="section-heading">
-      <h2 class="subtitle is-5">Workshops, Symposia, and Extended Abstracts</h2>
+      <h2 class="subtitle is-5" id="pub_workshops">Workshops, Symposia, and Extended Abstracts</h2>
     </div>
 
     <div class="container">
@@ -927,7 +968,7 @@
     </div>
 
     <div class="section-heading">
-      <h2 class="subtitle is-5">Theses</h2>
+      <h2 class="subtitle is-5" id="pub_theses">Theses</h2>
     </div>
 
     <div class="container">
