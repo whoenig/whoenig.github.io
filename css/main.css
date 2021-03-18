@@ -99,3 +99,7 @@ ul li {
 #toTop:hover {
   background-color: hsla(0, 0%, 21%, 0.9);
 }
+
+.alert {
+  font-weight: bold;
+}
