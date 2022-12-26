@@ -1,0 +1,40 @@
+plugins:
+  - jekyll-scholar
+
+exclude:
+  - README.md
+  - LICENSE
+
+# -----------------------------------------------------------------------------
+# Jekyll Scholar
+# -----------------------------------------------------------------------------
+
+scholar:
+  style: apa
+  locale: en
+
+  source: /_data/
+  bibliography: papers.bib
+  # i.e., we are using _layouts/bib.html
+  bibliography_template: bib
+  # HTML tag used for list of bibliography entries
+  bibliography_list_tag: 'div'
+  bibliography_list_attributes: {}
+  # HTML tag used for individual bibliography entries
+  bibliography_item_tag: 'div'
+  bibliography_item_attributes:
+    class: 'tile is-parent'
+  bibliography_class: 'tile is-ancestor is-flex-wrap'
+  # Note: if you have latex math in your bibtex, the latex filter
+  # preprocessing may conflict with MathJAX if the latter is enabled.
+  # See https://github.com/alshedivat/al-folio/issues/357.
+  bibtex_filters: [latex, smallcaps, superscript]
+
+  # replace_strings: true
+  # join_strings: true
+
+  # details_dir: bibliography
+  # details_layout: bibtex.html
+  # details_link: Details
+
+  # query: "@*"
