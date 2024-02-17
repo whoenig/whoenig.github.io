@@ -5,11 +5,13 @@
 <div class="tile is-parent">
 {% endcomment %}
   <div class="tile is-child card">
+    {% if entry.image %}
     <div class="card-image has-text-centered">
       <figure class="image is-inline-block">
         <img src="publications/{{entry.image}}" alt="Paper image">
       </figure>
     </div>
+    {% endif %}
     <div class="card-content paper">
       <p class="title">
         {{entry.title}}
@@ -52,6 +54,9 @@
         {%- if entry.webpage %}
             <a href="{{entry.webpage}}" class="card-footer-item"><span class="icon"><i class="fas fa-external-link-alt"></i></span><span>Webpage</span></a>
         {% endif %}
+        {%- if entry.blog %}
+            <a href="{{entry.blog}}" class="card-footer-item"><span class="icon"><i class="fas fa-external-link-alt"></i></span><span>Blog</span></a>
+        {% endif %}
         {%- if entry.code %}
         <a href="{{entry.code}}" class="card-footer-item"><span class="icon"> <i class="fab fa-github"></i> </span> <span>GitHub</span></a>
         {%- endif %}
@@ -62,6 +67,13 @@
         {%- if entry.doi %}
             <a href="https://doi.org/{{entry.doi}}" class="card-footer-item"><span class="icon"> <i
                     class="ai ai-doi"></i> </span> <span>DOI</span></a>
+        {% endif %}
+        {%- if entry.acm %}
+            <a href="{{entry.acm}}" class="card-footer-item"><span class="icon"> <i
+                    class="ai ai-acm"></i> </span> <span>ACM</span></a>
+        {% endif %}
+        {%- if entry.aux %}
+            {{entry.aux}}
         {% endif %}
     </footer>
   </div>
