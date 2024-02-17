@@ -15,7 +15,7 @@ gem install jekyll bundler
 ## Building/Testing
 
 ```
-jekyll serve
+bundle exec jekyll serve
 ```
 
 And go to `http://localhost:4000` in your browser. The page will automatically update, unless `_config.yml` is changed (in which case you have to restart jekyll).

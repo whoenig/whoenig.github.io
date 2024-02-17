@@ -10,7 +10,7 @@ exclude:
 # -----------------------------------------------------------------------------
 
 scholar:
-  style: apa
+  style: ieee
   locale: en
 
   source: /_data/
@@ -29,6 +29,9 @@ scholar:
   # preprocessing may conflict with MathJAX if the latter is enabled.
   # See https://github.com/alshedivat/al-folio/issues/357.
   bibtex_filters: [latex, smallcaps, superscript]
+
+  sort_by: year,month
+  order: descending
 
   # replace_strings: true
   # join_strings: true

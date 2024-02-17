@@ -1,0 +1,70 @@
+---
+---
+
+{% comment %}
+<div class="tile is-parent">
+{% endcomment %}
+  <div class="tile is-child card">
+    <div class="card-image has-text-centered">
+      <figure class="image is-inline-block">
+        <img src="publications/{{entry.image}}" alt="Paper image">
+      </figure>
+    </div>
+    <div class="card-content paper">
+      <p class="title">
+        {{entry.title}}
+      </p>
+      <p class="venue">
+        {% if entry.type == "article" %}
+            {{entry.journal}},
+        {% elsif entry.type == "inproceedings" %}
+            {{entry.booktitle}},
+        {% elsif entry.type == "mastersthesis" %}
+            MS Thesis ({{entry.degree}}),
+        {% elsif entry.type == "inbook" %}
+            Chapter in {{entry.booktitle}},
+        {% endif %}
+        {{entry.year}}
+        {% if entry.award %}
+        <strong>{{entry.award}}</strong>
+        {% endif %}
+      </p>
+      {% if entry.note %}
+      <p class="venue">
+        {{entry.note}}
+      </p>
+      {% endif %}
+      <p class="author">
+        {% for author in entry.author_array %}
+            {{author.first |append: " " | append: author.last | replace_first: 'Wolfgang Hönig', '<b>Wolfgang Hönig</b>'}}{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      </p>
+    </div>
+    <footer class="card-footer">
+        {%- if entry.pdf %}
+            <a href="publications/{{entry.pdf}}" class="card-footer-item"><span class="icon"> <i
+                class="fas fa-file-pdf"></i> </span> <span>PDF</span></a>
+        {%- endif %}
+        {%- if entry.video %}
+            <a href="{{entry.video}}" class="card-footer-item"><span class="icon"> <i class="fas fa-video"></i>
+                </span> <span>Video</span></a>
+        {%- endif %}
+        {%- if entry.webpage %}
+            <a href="{{entry.webpage}}" class="card-footer-item"><span class="icon"><i class="fas fa-external-link-alt"></i></span><span>Webpage</span></a>
+        {% endif %}
+        {%- if entry.code %}
+        <a href="{{entry.code}}" class="card-footer-item"><span class="icon"> <i class="fab fa-github"></i> </span> <span>GitHub</span></a>
+        {%- endif %}
+        {% if entry.arxiv %} 
+            <a href="https://arxiv.org/abs/{{entry.arxiv}}" class="card-footer-item"><span class="icon"> <i
+                class="ai ai-arxiv"></i> </span> <span>Arxiv</span></a>
+        {% endif %}
+        {%- if entry.doi %}
+            <a href="https://doi.org/{{entry.doi}}" class="card-footer-item"><span class="icon"> <i
+                    class="ai ai-doi"></i> </span> <span>DOI</span></a>
+        {% endif %}
+    </footer>
+  </div>
+{% comment %}
+</div>
+{% endcomment %}
