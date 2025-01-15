@@ -1,9 +1,63 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
 @string{IROS = {IEEE/RSJ international conference on intelligent robots and systems (IROS)}}
+@string{ICRA = {IEEE International Conference on Robotics and Automation (ICRA)}}
 @string{AuRo = {Autonomous Robots (AuRo)}}
+@string{TRO = {IEEE Transactions on Robotics (T-RO)}}
+@string{preprint = {Under Review}}
+
+@article{derajic2024safesets,
+  title={Learning Approximated Maximal Safe Sets via Hypernetworks for MPC-Based Local Motion Planning},
+  author={Bojan Derajić and
+          Mohamed-Khalil Bouzidi and 
+          Sebastian Bernhard and
+          Wolfgang Hönig},
+  journal=preprint,
+  arxiv={2410.20267},
+  year={2024}
+}
+
+@article{vonprittwitz2024diffquad,
+  title={Automatic Gain Tuning for Multirotors Using Differentiable Optimization},
+  author={Achim von Prittwitz and
+          Khaled Wahba and
+          Wolfgang Hönig},
+  journal={CoRL Workshop on Differentiable Optimization Everywhere: Simulation, Estimation, Learning, and Control},
+  webpage={https://sites.google.com/seas.upenn.edu/corl-2024-workshop-diff},
+  code={https://github.com/IMRCLab/differentiable-quadcopter},
+  pdf={assets/pdf/vonprittwitz2024diffquad.pdf},
+  year={2024},
+}
+
+@article{henkel2024gsrm,
+  title={GSRM: Building Roadmaps for Query-Efficient and Near-Optimal Path Planning Using a Reaction Diffusion System},
+  author={Christian Henkel and
+          Marc Toussaint and 
+          Wolfgang Hönig},
+  journal=IROS,
+  arxiv={2410.11024},
+  doi={10.1109/IROS58592.2024.10801293},
+  year={2024},
+  keywords  = {myPapers,conference,TUB},
+}
+
+@article{ortizharo2024idbrrt,
+  title={iDb-RRT: Sampling-based Kinodynamic Motion Planning with Motion Primitives and Trajectory Optimization},
+  author={Joaquim Ortiz-Haro and
+          Wolfgang Hönig and
+          Valentin N. Hartmann
+          Marc Toussaint and
+          Ludovic Righetti},
+  journal=IROS,
+  arxiv={2403.10745},
+  doi={10.1109/IROS58592.2024.10802168},
+  code={https://github.com/quimortiz/dynoplan},
+  video={https://youtu.be/3ToQU-qLWg0},
+  year={2024},
+  webpage={https://quimortiz.github.io/idbrrt/},
+  keywords  = {myPapers,conference,TUB},
+}
 
 @article{moldagalieva2023dbcbs,
   title={db-CBS: Discontinuity-Bounded Conflict-Based Search for Multi-Robot Kinodynamic Motion Planning},
@@ -11,8 +65,9 @@
           Joaquim Ortiz-Haro and 
           Marc Toussaint and
           Wolfgang Hönig},
-  journal={Accepted at ICRA},
+  journal=ICRA,
   arxiv={2309.16445},
+  doi={10.1109/ICRA57147.2024.10610999},
   code={https://github.com/IMRCLab/db-CBS},
   video={https://youtu.be/1mglNQOmOLE},
   year={2024},
@@ -26,8 +81,9 @@
           Valentin N. Hartmann and
           Erez Karpas and
           Wolfgang Hönig},
-  journal={Accepted at ICRA},
+  journal=ICRA,
   webpage={https://www.user.tu-berlin.de/mtoussai/24-CompletionTrees/},
+  doi={10.1109/ICRA57147.2024.10611722},
   year={2024},
   keywords  = {myPapers,conference,TUB},
 }
@@ -36,7 +92,7 @@
   title={Efficient Optimization-based Cable Force Allocation for Geometric Control of Multiple Quadrotors Transporting a Payload},
   author={Khaled Wahba and
           Wolfgang Hönig},
-  journal={IEEE Robotics and Automation Letters (RA-L)},
+  journal={IEEE Robotics and Automation Letters (RA-L); presentation at IROS},
   video={https://youtu.be/xp1zCVMB7Gg},
   arxiv={2304.02359},
   doi={10.1109/LRA.2024.3351001},
@@ -51,8 +107,60 @@
   author={Pia Bideau and
           David Bierbach and
           Wolfgang Hönig},
-  journal={Accepted at Symposium on Educational Advances in Artificial Intelligence (EAAI)},
+  journal={Symposium on Educational Advances in Artificial Intelligence (EAAI)},
   year={2024},
+  doi = {10.1609/aaai.v38i21.30386},
+  webpage={http://modelai.gettysburg.edu/2024/collective/},
+  keywords  = {myPapers,conference,TUB},
+}
+
+@article{idbastar,
+  title={iDb-A*: Iterative Search and Optimization for Optimal Kinodynamic Motion Planning},
+  author={Joaquim Ortiz-Haro and
+        Wolfgang Hönig and
+        Valentin N. Hartmann and
+        Marc Toussaint},
+  journal=TRO,
+  code={https://github.com/quimortiz/dynoplan},
+  video={https://youtu.be/GoznOEWbUb8},
+  webpage={https://quimortiz.github.io/idbastar},
+  doi={10.1109/TRO.2024.3502505},
+  arxiv={2311.03553},
+  year={2024},
+  keywords  = {myPapers,journal,TUB},
+  image={idbastar.jpg},
+}
+
+@article{dimmig2023survey,
+  title={Survey of Simulators for Aerial Robots},
+  author={Cora A. Dimmig and
+        Giuseppe Silano and
+        Kimberly McGuire and
+        Chiara Gabellieri and
+        Wolfgang Hönig and
+        Joseph Moore and
+        Marin Kobilarov},
+  journal={IEEE Robotics & Automation Magazine},
+  doi={10.1109/MRA.2024.3433171},
+  arxiv={2311.02296},
+  year={2024},
+  keywords  = {myPapers,journal,TUB},
+  image={dimmig2023survey.jpg},
+}
+
+@article{wahba2023coltransplanning,
+  title={Kinodynamic Motion Planning for a Team of Multirotors Transporting a Cable-Suspended Payload in Cluttered Environments},
+  author={Khaled Wahba and 
+          Joaquim Ortiz-Haro and 
+          Marc Toussaint and
+          Wolfgang Hönig},
+  journal=IROS,
+  arxiv={2310.03394},
+  code={https://github.com/IMRCLab/coltrans-planning},
+  video={https://youtu.be/hjHR-yy6_kg},
+  year={2024},
+  webpage={https://imrclab.github.io/coltrans-planning/},
+  doi={10.1109/IROS58592.2024.10802794},
   keywords  = {myPapers,conference,TUB},
 }
 
