@@ -3,20 +3,275 @@
 
 @string{IROS = {IEEE/RSJ international conference on intelligent robots and systems (IROS)}}
 @string{ICRA = {IEEE International Conference on Robotics and Automation (ICRA)}}
+@string{CoRL = {Conference on Robot Learning (CoRL)}}
 @string{AuRo = {Autonomous Robots (AuRo)}}
 @string{TRO = {IEEE Transactions on Robotics (T-RO)}}
+@string{RAL = {IEEE Robotics and Automation Letters (R-AL)}}
+@string{L4DC = {Learning for Dynamics and Controls (L4DC)}}
+@string{AAMAS = {International Conference on Autonomous Agents and Multiagent Systems (AAMAS)}}
+@string{ICAPS = {International Conference on Automated Planning and Scheduling (ICAPS)}}
+@string{RiE = {Robotics in Education (RiE)}}
+
+
+
 @string{preprint = {Under Review}}
 
-@article{derajic2024safesets,
-  title={Learning Approximated Maximal Safe Sets via Hypernetworks for MPC-Based Local Motion Planning},
-  author={Bojan Derajić and
-          Mohamed-Khalil Bouzidi and 
-          Sebastian Bernhard and
+@article{2026-rusty-flying-robots,
+  title={Rusty Flying Robots: Learning a Full Robotics Stack with Real-Time Operation on an STM32 Microcontroller in a 9 ECTS MS Course},
+  author={Wolfgang Hönig and
+        Christoph Scherer and
+        Khaled Wahba},
+  journal=RiE,
+  webpage={https://imrclab.github.io/teaching/flying-robots},
+  year={2026},
+  keywords  = {myPapers,conference,TUB},
+}
+
+@article{2026-magrob,
+  title={From Transportation to Manipulation: Transforming Magnetic Levitation to Magnetic Robotics},
+  author={Lara Bergmann and
+          Noah Greis and
+          Roderich Groß and
+          Robert Haschke and
+          Nico Hochgeschwender
+          Wolfgang Hönig and
+          Jana Jost and
+          Stefan Kopp and
+          Rania Rayyes and
+          Sebastian Trimpe and
+          Anna-Lisa Vollmer and
+          Malte Wirkus and
+          Sebastian Wrede and
+          Klaus Neumann},
+  journal={2nd German Robotics Conference (no peer review)},
+  pdf={assets/pdf/2026-magrob.pdf},
+  year={2026},
+}
+
+@article{2026-pololu-rs,
+  title={Pololu-rs: A Rust-Based Framework for Reproducible Multi-Robot Experiments},
+  author={Jiaming Li and
+          Charlotte Stentzler and
+          Johannes Roser and
+          Wolfgang Hönig},
+  journal={2nd German Robotics Conference (no peer review)},
+  pdf={assets/pdf/2026-pololu-rs.pdf},
+  year={2026},
+}
+
+@article{2026-ann-cmcgs-grc,
+  title={ANN-CMCGS: Generalizing Continuous Monte-Carlo Graph Search with Approximate Nearest Neighbors},
+  author={Christoph Scherer and 
+          Wolfgang Hönig},
+  journal={2nd German Robotics Conference (no peer review; work accepted as extended abstract at AAMAS)},
+  pdf={assets/pdf/2026-ann-cmcgs-grc.pdf},
+  year={2026},
+}
+
+@article{2026-lindi-grc,
+  title={Learned Incremental Nonlinear Dynamic Inversion for Quadrotors with and without Slung Payloads},
+  author={Eckart Cobo-Briesewitz and
+          Khaled Wahba and 
+          Wolfgang Hönig},
+  journal={2nd German Robotics Conference (no peer review; work accepted at L4DC)},
+  pdf={assets/pdf/2026-lindi-grc.pdf},
+  year={2026},
+}
+
+@article{2026-ann-cmcgs,
+  title={ANN-CMCGS: Generalizing Continuous Monte-Carlo Graph Search with Approximate Nearest Neighbors},
+  author={Christoph Scherer and 
+          Wolfgang Hönig},
+  journal=AAMAS,
+  year={2026},
+  keywords  = {myPapers,conference,TUB},
+}
+
+@article{2026-cfbf-model,
+  title={How to Model Your Crazyflie Brushless},
+  author={Alexander Gräfe and 
+          Christoph Scherer and 
+          Wolfgang Hönig and
+          Sebastian Trimpe},
+  journal=ICRA,
+  arxiv={2603.05944},
+  code={https://github.com/Data-Science-in-Mechanical-Engineering/CrazyflieBrushJAX},
+  video={https://youtu.be/O6w85nW7Y_8},
+  year={2026},
+  keywords  = {myPapers,conference,TUB},
+}
+
+@article{2026-grace,
+  title={GRACE: A Unified 2D Multi-Robot Path Planning Simulator & Benchmark for Grid, Roadmap, And Continuous Environments},
+  author={Chuanlong Zang and 
+          Anna Mannucci and 
+          Isabelle Barz and 
+          Philipp Schillinger and 
+          Florian Lier and 
+          Wolfgang Hönig},
+  journal=ICRA,
+  year={2026},
+  keywords  = {myPapers,conference,TUB},
+}
+
+@article{2026-orn-cbf,
+  title={ORN-CBF: Learning Observation-conditioned Residual Neural Control Barrier Functions via Hypernetworks},
+  author={Bojan Derajic and 
+          Sebastian Bernhard and 
+          Wolfgang Hönig},
+  journal=ICRA,
+  year={2026},
+  keywords  = {myPapers,conference,TUB},
+}
+
+@article{2026-db-lacam,
+  title={db-LaCAM: Fast and Scalable Multi-Robot Kinodynamic Motion Planning with Discontinuity-Bounded Search and Lightweight MAPF},
+  author={Akmaral Moldagalieva and
+          Keisuke Okumura and
+          Amanda Prorok and
+          Wolfgang Hönig},
+  journal=ICAPS,
+  arxiv={2512.06796},
+  year={2026},
+  keywords  = {myPapers,conference,TUB},
+}
+
+@article{2025-crazymarl,
+  title={CrazyMARL: Decentralized Direct Motor Control Policies for Cooperative Aerial Transport of Cable-Suspended Payloads},
+  author={Viktor Lorentz and 
+          Khaled Wahba and 
+          Sayantan Auddy and
+          Marc Toussaint and
+          Wolfgang Hönig},
+  journal=ICRA,
+  arxiv={2509.14126},
+  year={2026},
+  video={https://youtu.be/0gBlbA2pX4g},
+  keywords  = {myPapers,conference,TUB},
+}
+
+@article{2025-pc-dbCBS,
+  title={pc-dbCBS: Kinodynamic Motion Planning of Physically-Coupled Robot
+Teams},
+  author={Khaled Wahba and
+          Wolfgang Hönig},
+  journal=RAL,
+  doi={10.1109/LRA.2025.3607267},
+  arxiv={2505.10355},
+  year={2025},
+  keywords  = {myPapers,journal,TUB},
+}
+
+@article{2025-RNTC-MPC,
+  title={Residual Neural Terminal Constraint for MPC-based Collision Avoidance in Dynamic Environments},
+  author={Derajić, Bojan and Bouzidi, Mohamed-Khalil and Bernhard, Sebastian and Hönig, Wolfgang},
+  journal=CoRL,
+  %code={https://github.com/quimortiz/dynoplan},
+  %video={https://youtu.be/GoznOEWbUb8},
+  %webpage={https://quimortiz.github.io/idbastar},
+  %doi={10.1109/LRA.2025.3589151},
+  arxiv={2508.03428},
+  %openreview={seSw6ssEid},
+  year=2025,
+  keywords  = {myPapers,conference,TUB},
+}
+
+@article{2025-NTC-MPC,
+  title={Learning Maximal Safe Sets Using Hypernetworks for MPC-Based Local Trajectory Planning in Unknown Environments},
+  author={Derajić, Bojan and Bouzidi, Mohamed-Khalil and Bernhard, Sebastian and Hönig, Wolfgang},
+  journal=RAL,
+  %code={https://github.com/quimortiz/dynoplan},
+  %video={https://youtu.be/GoznOEWbUb8},
+  %webpage={https://quimortiz.github.io/idbastar},
+  doi={10.1109/LRA.2025.3589151},
+  arxiv={2410.20267},
+  year={2025},
+  volume={10},
+  number={9},
+  pages={8842-8849},
+  keywords  = {myPapers,journal,TUB},
+}
+
+@article{moldagalieva2025dbecbs,
+  title={db-ECBS: Interaction-Aware Multi-Robot Kinodynamic Motion Planning},
+  author={Akmaral Moldagalieva and 
+          Joaquim Ortiz-Haro and 
+          Wolfgang Hönig},
+  journal=TRO,
+  doi={10.1109/TRO.2025.3637148},
+  code={https://github.com/IMRCLab/db-CBS/tree/dbecbs-tro},
+  video={https://youtu.be/OcG-59Pq3oY},
+  pdf={assets/pdf/moldagalieva2025dbecbs.pdf},
+  year={2025},
+  keywords  = {myPapers,journal,TUB},
+}
+
+@article{cai2025tracking,
+  title={Optimal Assignment for Multi-Robot Tracking Using Motion Capture Systems},
+  author={Nan Cai and
+          Wolfgang Hönig},
+  journal={1st German Robotics Conference (no peer review)},
+  code={https://github.com/IMRCLab/motion_capture_tracking},
+  pdf={assets/pdf/cai2025tracking.pdf},
+  year={2025},
+}
+
+@article{moldagalieva2025dbecbs_extended_abstract,
+  title={db-ECBS: Interaction-Aware Multi-Robot Kinodynamic Motion Planning (Extended Abstract)},
+  author={Akmaral Moldagalieva and 
+          Joaquim Ortiz-Haro and 
+          Wolfgang Hönig},
+  journal={1st German Robotics Conference (no peer review)},
+  code={https://github.com/IMRCLab/db-CBS/tree/dev-3d-main},
+  pdf={assets/pdf/moldagalieva2025dbecbs_extended_abstract.pdf},
+  year={2025},
+}
+
+@article{wahba2025pcdbcbs,
+  title={Pc-dbCBS: Kinodynamic Motion Planning of Physically-Coupled Robot Teams},
+  author={Khaled Wahba and
+          Wolfgang Hönig},
+  journal={1st German Robotics Conference (no peer review)},
+  code={https://github.com/IMRCLab/db-CBS/tree/tdbastar-quad-payload},
+  pdf={assets/pdf/wahba2025pcdbcbs.pdf},
+  year={2025},
+}
+
+@article{franke2025dbastardiffusion,
+  title={Accelerating db-A* for Kinodynamic Motion Planning Using Diffusion},
+  author={Julius Franke and
+          Akmaral Moldagalieva and 
+          Pia Hanfeld and
           Wolfgang Hönig},
   journal=preprint,
-  arxiv={2410.20267},
-  year={2024}
+  arxiv={2503.05539},
+  year={2025}
 }
+
+@article{cobobriesewitz2025indi,
+  title={Neural-Augmented Incremental Nonlinear Dynamic Inversion for Quadrotors with Payload Adaptation},
+  author={Eckart Cobo-Briesewitz and
+          Khaled Wahba and 
+          Wolfgang Hönig},
+  journal=L4DC,
+  arxiv={2503.09441},
+  year={2026},
+  keywords  = {myPapers,conference,TUB},
+}
+
+@ARTICLE{spencer2025,
+  author={Teetaert, Spencer and Zhao, Wenda and Loquercio, Antonio and Zhou, Siqi and Brunke, Lukas and Schuck, Martin and Hönig, Wolfgang and Panerati, Jacopo and Schoellig, Angela P.},
+  journal={IEEE Robotics & Automation Magazine}, 
+  title={Advancing Reproducibility, Benchmarks, and Education With Remote Sim2real: Remote Simulation to Real Robot Hardware}, 
+  year={2025},
+  volume={32},
+  number={1},
+  pages={117-123},
+  keywords={},
+  doi={10.1109/MRA.2025.3527291},
+  keywords  = {myPapers,journal,TUB},
+}
+
 
 @article{vonprittwitz2024diffquad,
   title={Automatic Gain Tuning for Multirotors Using Differentiable Optimization},
